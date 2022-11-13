@@ -30,13 +30,21 @@ class SimpleCache
 
     private function loadFile(): void
     {
-        $string = file_get_contents($this->filePath);
+        if (!file_exists($this->filePath)) {
+            $this->createEmpty();
+        }
 
+        $string = file_get_contents($this->filePath);
         $this->json = json_decode($string, true);
     }
 
     private function saveFile(): void
     {
         file_put_contents($this->filePath, json_encode($this->json));
+    }
+
+    private function createEmpty(): void
+    {
+        file_put_contents($this->filePath, '{}');
     }
 }
