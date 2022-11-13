@@ -1,6 +1,6 @@
 {
     "name": "grzojda/simple-cache",
-    "type": "path",
+    "type": "library",
     "version": "1.0.1",
     "description": "Simple file cache",
     "keywords": ["cache", "json", "file"],
