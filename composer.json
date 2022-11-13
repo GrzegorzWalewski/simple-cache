@@ -1,0 +1,22 @@
+{
+    "name": "grzojda/simple-cache",
+    "type": "path",
+    "version": "1.0.0",
+    "description": "Simple file cache",
+    "keywords": ["cache", "json", "file"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Grzegorz Walewski",
+            "email": "grzojda@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Grzojda\\SimpleCache\\": "src/"
+        }
+    }
+}
